@@ -52,14 +52,14 @@
 	<!--<haxedef name="FLX_RECORD" />-->
 
 	<!--Disable the right and middle mouse buttons-->
-	<!--<haxedef name="FLX_NO_MOUSE_ADVANCED" />-->
+	<haxedef name="FLX_NO_MOUSE_ADVANCED" unless="debug" />
 
 	<!--Disable the native cursor API on Flash-->
-	<!--<haxedef name="FLX_NO_NATIVE_CURSOR" />-->
+	<haxedef name="FLX_NO_NATIVE_CURSOR" unless="debug" />
 
 	<!--Optimise inputs, be careful you will get null errors if you don't use conditionals in your game-->
-	<haxedef name="FLX_NO_MOUSE" />
-	<haxedef name="FLX_NO_KEYBOARD" />
+	<haxedef name="FLX_NO_MOUSE" unless="debug" />
+	<haxedef name="FLX_NO_KEYBOARD" unless="debug" />
 	<haxedef name="FLX_NO_TOUCH" />
 	<haxedef name="FLX_NO_GAMEPAD" />
 
