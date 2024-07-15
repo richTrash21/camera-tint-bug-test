@@ -19,7 +19,11 @@ class PlayState extends FlxState
 	{
 		super.create();
 
-		add(new FlxSprite().makeGraphic(640, 480, FlxColor.WHITE));
+		FlxG.camera.bgColor = 0xFF999999;
+		final sprite = new FlxSprite().makeGraphic(1, 1, FlxColor.WHITE);
+		sprite.scale.set(FlxG.width * 0.75, FlxG.height * 0.75);
+		sprite.updateHitbox();
+		add(sprite.screenCenter());
 
 		cycleColors();
 	}
